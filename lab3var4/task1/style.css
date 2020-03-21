@@ -1,3 +1,6 @@
+input[type=number]{
+	width: 125px;
+}
 .input{
 	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
 	margin: 5px;
