@@ -1,6 +1,8 @@
 
 <?php
 	//print_r($_POST);
+	$column = $_POST['j'];
+	$line = $_POST['i'];
 	 $str = $_POST['array'];
 	  $startarr = explode( ",",$str );
 	  $k = 0;
@@ -19,7 +21,7 @@
 	    exit;
 	  }
 	  if( count($arr) == 1 ){
-	        
+
       	    echo '<table style = " border-collapse: collapse; ">';
       	    echo '<tr>';
       	    echo '<td style = "border: 1px solid grey; padding: 10px; font-size: 40px;">'.$arr[0].'</td>';
@@ -43,9 +45,9 @@
 
 	  }
 	  echo '<table style = " border-collapse: collapse; ">';
-      	  for ($i=0; $i < $kol; $i++) {
+      	  for ($i=0; $i < $line; $i++) {
       	        echo '<tr>';
-            	    for ($j=0; $j < count($arr) / $kol; $j++) {
+            	    for ($j=0; $j < $column; $j++) {
             	        echo '<td style = "border: 1px solid grey; padding: 10px; font-size: 40px;">'.$finalArr[$i][$j].'</td>';
             	        //echo $j;
             	    }
